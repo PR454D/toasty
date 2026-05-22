@@ -7,6 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0](https://github.com/tokio-rs/toasty/compare/toasty-driver-integration-suite-v0.6.1...toasty-driver-integration-suite-v0.7.0) - 2026-05-22
+
+### Added
+- TransactionMode for SQLite to control lock acquisition ([#931])
+- #[version] macro now supports tuple-newtype embeds of u64 ([#930])
+- Exposed primary key type as Model::PrimaryKey ([#921])
+- Multi-step (via) has_many and has_one relations ([#890])
+
+### Fixed
+- DynamoDB IS NULL / IS NOT NULL queries ([#940])
+- #[has_one] macro respects pair attribute ([#927])
+
+### Changed
+- [**breaking**] Replaced #[serialize(json)] with toasty::Json<T> wrapper type ([#926])
+- [**breaking**] Scoped .ilike() operator to PostgreSQL only ([#937])
+- [**breaking**] Moved schema diff types to schema::diff module ([#929])
+
+[#890]: https://github.com/tokio-rs/toasty/pull/890
+[#921]: https://github.com/tokio-rs/toasty/pull/921
+[#926]: https://github.com/tokio-rs/toasty/pull/926
+[#927]: https://github.com/tokio-rs/toasty/pull/927
+[#929]: https://github.com/tokio-rs/toasty/pull/929
+[#930]: https://github.com/tokio-rs/toasty/pull/930
+[#931]: https://github.com/tokio-rs/toasty/pull/931
+[#937]: https://github.com/tokio-rs/toasty/pull/937
+[#940]: https://github.com/tokio-rs/toasty/pull/940
+
 ## [0.6.1](https://github.com/tokio-rs/toasty/compare/toasty-driver-integration-suite-v0.6.0...toasty-driver-integration-suite-v0.6.1) - 2026-05-16
 
 ### Added

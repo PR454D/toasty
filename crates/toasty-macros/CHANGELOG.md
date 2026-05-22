@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0](https://github.com/tokio-rs/toasty/compare/toasty-macros-v0.6.1...toasty-macros-v0.7.0) - 2026-05-22
+
+### Added
+
+- Allow #[version] on tuple-newtype embeds of u64 ([#930])
+- [**breaking**] Replace `#[serialize(json)]` with `toasty::Json<T>` wrapper ([#926])
+- Expose primary-key type via Model::PrimaryKey ([#921])
+- Add multi-step (via) has_many and has_one relations ([#890])
+
+### Fixed
+
+- Respect `pair` attribute in `#[has_one]` macro ([#927])
+
+[#890]: https://github.com/tokio-rs/toasty/pull/890
+[#921]: https://github.com/tokio-rs/toasty/pull/921
+[#926]: https://github.com/tokio-rs/toasty/pull/926
+[#927]: https://github.com/tokio-rs/toasty/pull/927
+[#930]: https://github.com/tokio-rs/toasty/pull/930
+
 ## [0.6.1](https://github.com/tokio-rs/toasty/compare/toasty-macros-v0.6.0...toasty-macros-v0.6.1) - 2026-05-16
 
 ### Added

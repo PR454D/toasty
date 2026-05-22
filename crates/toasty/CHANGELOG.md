@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0](https://github.com/tokio-rs/toasty/compare/toasty-v0.6.1...toasty-v0.7.0) - 2026-05-22
+
+### Added
+
+- SQLite TransactionMode to control lock acquisition ([#931])
+- Support #[version] on tuple-newtype embeds of u64 ([#930])
+- SELECT DISTINCT support in SQL serialization ([#934])
+- [**breaking**] Replace #[serialize(json)] with toasty::Json<T> wrapper ([#926])
+- Expose primary-key type via Model::PrimaryKey ([#921])
+- Multi-step (via) has_many and has_one relationships ([#890])
+- Non-panicking try_get method for relation types ([#918])
+
+### Fixed
+
+- [**breaking**] Scope `.ilike()` to PostgreSQL and document operator pass-through ([#937])
+
+### Changed
+
+- [**breaking**] Move schema diff types to `schema::diff` ([#929])
+
+[#890]: https://github.com/tokio-rs/toasty/pull/890
+[#918]: https://github.com/tokio-rs/toasty/pull/918
+[#921]: https://github.com/tokio-rs/toasty/pull/921
+[#926]: https://github.com/tokio-rs/toasty/pull/926
+[#929]: https://github.com/tokio-rs/toasty/pull/929
+[#930]: https://github.com/tokio-rs/toasty/pull/930
+[#931]: https://github.com/tokio-rs/toasty/pull/931
+[#934]: https://github.com/tokio-rs/toasty/pull/934
+[#937]: https://github.com/tokio-rs/toasty/pull/937
+
 ## [0.6.1](https://github.com/tokio-rs/toasty/compare/toasty-v0.6.0...toasty-v0.6.1) - 2026-05-16
 
 ### Added

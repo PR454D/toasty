@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0](https://github.com/tokio-rs/toasty/compare/toasty-driver-dynamodb-v0.6.1...toasty-driver-dynamodb-v0.7.0) - 2026-05-22
+
+### Fixed
+
+- *(dynamodb)* omit empty ExpressionAttributeValues on IS NULL / IS NOT NULL scans ([#940])
+
+### Changed
+
+- *(core)* [**breaking**] Schema diff types moved to `schema::diff` ([#929])
+
+[#929]: https://github.com/tokio-rs/toasty/pull/929
+[#940]: https://github.com/tokio-rs/toasty/pull/940
+
 ## [0.6.1](https://github.com/tokio-rs/toasty/compare/toasty-driver-dynamodb-v0.6.0...toasty-driver-dynamodb-v0.6.1) - 2026-05-16
 
 - Internal improvements only.

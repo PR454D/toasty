@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0](https://github.com/tokio-rs/toasty/compare/toasty-core-v0.6.1...toasty-core-v0.7.0) - 2026-05-22
+
+### Added
+
+- TransactionMode for SQLite lock-acquisition control ([#931])
+- INNER join variant ([#922])
+- SELECT DISTINCT query serialization ([#934])
+- Multi-step (via) has_many and has_one relations ([#890])
+
+### Fixed
+
+- [**breaking**] `.ilike()` scoped to PostgreSQL ([#937])
+
+### Changed
+
+- [**breaking**] Schema diff types moved to `schema::diff` ([#929])
+
+[#890]: https://github.com/tokio-rs/toasty/pull/890
+[#922]: https://github.com/tokio-rs/toasty/pull/922
+[#929]: https://github.com/tokio-rs/toasty/pull/929
+[#931]: https://github.com/tokio-rs/toasty/pull/931
+[#934]: https://github.com/tokio-rs/toasty/pull/934
+[#937]: https://github.com/tokio-rs/toasty/pull/937
+
 ## [0.6.1](https://github.com/tokio-rs/toasty/compare/toasty-core-v0.6.0...toasty-core-v0.6.1) - 2026-05-16
 
 ### Added
